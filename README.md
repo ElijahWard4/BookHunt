@@ -19,16 +19,10 @@ BookHunt is a MERN stack application that allows users to search for books using
 
 2. **Install dependencies:**
   ```bash
-  npm install
+  npm run render-build
   ```
-
-3. **Build the client side**
   
-  ```bash
-  npm run build
-  ```
-
-4. **Run the application:**
+3. **Run the application:**
   ```bash
   npm run develop
   ```
