@@ -16,12 +16,12 @@ const server = new ApolloServer({
   context: authMiddleware
 });
 
-const ApolloServer = async (typeDefs, resolvers) => {
+const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();
   server.applyMiddleware({ app });
 }
 
-ApolloServer();
+startApolloServer();
 
 
 
