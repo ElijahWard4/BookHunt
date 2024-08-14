@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const db = require('./config/connection');
-const routes = require('./routes');
+// const routes = require('./routes');
 
 const { ApolloServer } = require('apollo-server-express');
 const { authMiddleware } = require('./utils/auth');
@@ -16,10 +16,10 @@ const server = new ApolloServer({
   context: authMiddleware
 });
 
-const startApolloServer = async (typeDefs, resolvers) => {
-  await server.start();
+// const startApolloServer = async (typeDefs, resolvers) => {
+//   await server.start();
   server.applyMiddleware({ app });
-}
+// }
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
