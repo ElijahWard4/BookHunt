@@ -1,3 +1,5 @@
+const { gql } = require('apollo-server-express');
+
 const typeDefs = 
 `       type Query {
             me: User
@@ -48,3 +50,5 @@ const typeDefs =
             removeBook(bookId: ID!): User
         }
 `;
+
+module.exports = typeDefs;
